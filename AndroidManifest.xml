@@ -62,6 +62,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Welcome -->
+        <activity
+            android:name="cn.ucai.WePartyBar.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
 
         <!-- 登陆 -->
         <activity

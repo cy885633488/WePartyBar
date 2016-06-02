@@ -32,13 +32,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.easemob.EMCallBack;
+import cn.ucai.WePartyBar.R;
 import cn.ucai.WePartyBar.applib.controller.HXSDKHelper;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMGroupManager;
 import cn.ucai.WePartyBar.Constant;
 import cn.ucai.WePartyBar.WePartyBarApplication;
 import cn.ucai.WePartyBar.DemoHXSDKHelper;
-import cn.ucai.WePartyBar.R;
 import cn.ucai.WePartyBar.db.UserDao;
 import cn.ucai.WePartyBar.domain.User;
 import cn.ucai.WePartyBar.utils.CommonUtils;
@@ -159,7 +159,7 @@ public class LoginActivity extends BaseActivity {
 						public void run() {
 							pd.dismiss();
 							DemoHXSDKHelper.getInstance().logout(true,null);
-							Toast.makeText(getApplicationContext(), R.string.login_failure_failed, 1).show();
+							Toast.makeText(getApplicationContext(), R.string.login_failure_failed, Toast.LENGTH_LONG).show();
 						}
 					});
 					return;

@@ -241,7 +241,7 @@ public class LoginActivity extends BaseActivity {
 	 * @param view
 	 */
 	public void register(View view) {
-		startActivityForResult(new Intent(this, RegisterActivity.class), 0);
+		startActivityForResult(new Intent(this, Register1Activity.class), 0);
 	}
 
 	@Override

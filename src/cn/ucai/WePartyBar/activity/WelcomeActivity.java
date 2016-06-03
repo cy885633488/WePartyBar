@@ -20,7 +20,7 @@ public class WelcomeActivity extends BaseActivity {
     public void onClick(View v){
         switch (v.getId()){
             case R.id.welcome_btnRegister:
-                startActivity(new Intent(WelcomeActivity.this,RegisterActivity.class));
+                startActivity(new Intent(WelcomeActivity.this,Register1Activity.class));
                 break;
             case R.id.welcome_btnLogin:
                 startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));

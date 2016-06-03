@@ -78,11 +78,25 @@
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
 
-        <!-- 注册 -->
+        <!-- 注册1 -->
         <activity
-            android:name="cn.ucai.WePartyBar.activity.RegisterActivity"
+            android:name=".activity.Register1Activity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" 
+            android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <!-- 注册2 -->
+        <activity
+            android:name=".activity.Register2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <!-- 注册3 -->
+        <activity
+            android:name=".activity.Register3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <!-- 聊天页面 -->

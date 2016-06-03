@@ -5,13 +5,13 @@
     android:background="#eff2f6">
 
     <RelativeLayout
-        android:id="@+id/register1_rl"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#FF4040">
 
         <Button
             android:id="@+id/register1_btn_back"
+            android:onClick="onClick"
             android:layout_width="10dp"
             android:layout_height="20dp"
             android:background="@drawable/btn_back"
@@ -29,6 +29,7 @@
             android:layout_toRightOf="@id/register1_btn_back"/>
         <TextView
             android:id="@+id/register1_next"
+            android:onClick="onClick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -122,6 +123,7 @@
                 android:textColor="#000"/>
             <TextView
                 android:id="@+id/register1_user_token"
+                android:onClick="onClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="《用户协议》"

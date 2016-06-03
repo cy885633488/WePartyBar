@@ -295,4 +295,6 @@
     <string name="toast_updatenick_fail">update nickname fail!</string>
     <string name="toast_updatephoto_success">update photo success!</string>
     <string name="toast_updatephoto_fail">update photo fail!</string>
+    <string name="please_enter_phone_number">please enter phone number</string>
+    <string name="please_enter_email_address">please enter email address</string>
 </resources>

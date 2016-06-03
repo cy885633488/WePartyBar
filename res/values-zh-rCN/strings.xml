@@ -305,4 +305,6 @@
     <string name="toast_updatenick_fail">更新昵称失败!</string>
     <string name="toast_updatephoto_success">更新头像成功!</string>
     <string name="toast_updatephoto_fail">更新头像失败!</string>
+    <string name="please_enter_phone_number">请输入手机号（必填）</string>
+    <string name="please_enter_email_address">请输入邮箱（可选）</string>
 </resources>

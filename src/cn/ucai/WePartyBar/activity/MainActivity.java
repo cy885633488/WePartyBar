@@ -34,6 +34,8 @@ import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -71,7 +73,9 @@ import com.easemob.util.NetUtils;
 import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends BaseActivity implements EMEventListener {
-
+	LinearLayout mllShouye,mllHuodong,mllTongxunlu,mllFaxian;
+	ImageView mivShouye,mivHuodong,mivTongxunlu,mivFaxian,mivMenuHome;
+	TextView mtvShouye,mtvHuodong,mtvTongxunlu,mtvFaxian;
 	protected static final String TAG = "MainActivity";
 	// 未读消息textview
 	private TextView unreadLabel;
@@ -226,23 +230,6 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                 groupUser.setNick(strGroup);
                 groupUser.setHeader("");
                 userlist.put(Constant.GROUP_USERNAME, groupUser);
-                
-                 // 添加"聊天室"
-                User chatRoomItem = new User();
-                String strChatRoom = context.getString(R.string.chat_room);
-                chatRoomItem.setUsername(Constant.CHAT_ROOM);
-                chatRoomItem.setNick(strChatRoom);
-                chatRoomItem.setHeader("");
-                userlist.put(Constant.CHAT_ROOM, chatRoomItem);
-                
-                // 添加"Robot"
-        		User robotUser = new User();
-        		String strRobot = context.getString(R.string.robot_chat);
-        		robotUser.setUsername(Constant.CHAT_ROBOT);
-        		robotUser.setNick(strRobot);
-        		robotUser.setHeader("");
-        		userlist.put(Constant.CHAT_ROBOT, robotUser);
-        		
                  // 存入内存
                 ((DemoHXSDKHelper)HXSDKHelper.getInstance()).setContactList(userlist);
                  // 存入db
@@ -326,16 +313,17 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 	 * 初始化组件
 	 */
 	private void initView() {
-		unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
-		unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
-		mTabs = new Button[3];
-		mTabs[0] = (Button) findViewById(R.id.btn_conversation);
-		mTabs[1] = (Button) findViewById(R.id.btn_address_list);
-		mTabs[2] = (Button) findViewById(R.id.btn_setting);
-		// 把第一个tab设为选中状态
-		mTabs[0].setSelected(true);
+//		unreadLabel = (TextView) findViewById(R.id.unread_msg_number);
+//		unreadAddressLable = (TextView) findViewById(R.id.unread_address_number);
+//		mTabs = new Button[3];
+//		mTabs[0] = (Button) findViewById(R.id.btn_conversation);
+//		mTabs[1] = (Button) findViewById(R.id.btn_address_list);
+//		mTabs[2] = (Button) findViewById(R.id.btn_setting);
+//		// 把第一个tab设为选中状态
+//		mTabs[0].setSelected(true);
+//
+//		registerForContextMenu(mTabs[1]);
 
-		registerForContextMenu(mTabs[1]);
 	}
 
 	/**
@@ -344,17 +332,17 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 	 * @param view
 	 */
 	public void onTabClicked(View view) {
-		switch (view.getId()) {
-		case R.id.btn_conversation:
-			index = 0;
-			break;
-		case R.id.btn_address_list:
-			index = 1;
-			break;
-		case R.id.btn_setting:
-			index = 2;
-			break;
-		}
+//		switch (view.getId()) {
+//		case R.id.btn_conversation:
+//			index = 0;
+//			break;
+//		case R.id.btn_address_list:
+//			index = 1;
+//			break;
+//		case R.id.btn_setting:
+//			index = 2;
+//			break;
+//		}
 		if (currentTabIndex != index) {
 			FragmentTransaction trx = getSupportFragmentManager().beginTransaction();
 			trx.hide(fragments[currentTabIndex]);
@@ -548,7 +536,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 					String st10 = getResources().getString(R.string.have_you_removed);
 					if (ChatActivity.activityInstance != null
 							&& usernameList.contains(ChatActivity.activityInstance.getToChatUsername())) {
-						Toast.makeText(MainActivity.this, ChatActivity.activityInstance.getToChatUsername() + st10, 1)
+						Toast.makeText(MainActivity.this, ChatActivity.activityInstance.getToChatUsername() + st10, Toast.LENGTH_LONG)
 								.show();
 						ChatActivity.activityInstance.finish();
 					}

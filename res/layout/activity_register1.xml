@@ -61,9 +61,10 @@
             android:hint="@string/please_enter_phone_number"
             android:paddingLeft="10dip"
             android:singleLine="true"
-            android:textSize="23sp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="30dp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"/>
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -72,9 +73,10 @@
             android:hint="@string/please_enter_email_address"
             android:paddingLeft="10dip"
             android:singleLine="true"
-            android:textSize="23sp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"/>
 
         <EditText
             android:id="@+id/password"
@@ -85,9 +87,10 @@
             android:inputType="textPassword"
             android:paddingLeft="10dip"
             android:singleLine="true"
-            android:textSize="23sp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"/>
 
         <EditText
             android:id="@+id/confirm_password"
@@ -98,22 +101,22 @@
             android:inputType="textPassword"
             android:paddingLeft="10dip"
             android:singleLine="true"
-            android:textSize="23sp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="15dp" />
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@drawable/checkbox_register1_selector"
-                android:layout_marginLeft="50dp"/>
+                android:layout_marginLeft="30dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

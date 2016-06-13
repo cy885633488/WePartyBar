@@ -79,7 +79,7 @@ public class DbOpenHelper extends SQLiteOpenHelper{
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		if(oldVersion < 2){
-		    db.execSQL("ALTER TABLE "+ UserDao.TABLE_NAME +" ADD COLUMN "+ 
+		    db.execSQL("ALTER TABLE "+ UserDao.TABLE_NAME +" ADD COLUMN "+
 		            UserDao.COLUMN_NAME_AVATAR + " TEXT ;");
 		}
 		

@@ -19,6 +19,7 @@
                 android:src="@drawable/icon_user"
                 android:layout_gravity="center_vertical"/>
             <EditText
+                android:id="@+id/login_userName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="手机号/邮箱"
@@ -35,16 +36,19 @@
                 android:src="@drawable/icon_pwd2"
                 android:layout_gravity="center_vertical"/>
             <EditText
+                android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="密码"
                 android:textSize="20sp"/>
         </LinearLayout>
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FF4040"
             android:text="登录"
+            android:onClick="login"
             android:textColor="#fff"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"

@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.ucai.WePartyBar.activity;
+package cn.ucai.WePartyBar.fragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -49,6 +49,13 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import cn.ucai.WePartyBar.activity.AddContactActivity;
+import cn.ucai.WePartyBar.activity.ChatActivity;
+import cn.ucai.WePartyBar.activity.GroupsActivity;
+import cn.ucai.WePartyBar.activity.MainActivity;
+import cn.ucai.WePartyBar.activity.NewFriendsMsgActivity;
+import cn.ucai.WePartyBar.activity.PublicChatRoomsActivity;
+import cn.ucai.WePartyBar.activity.RobotsActivity;
 import cn.ucai.WePartyBar.applib.controller.HXSDKHelper;
 import cn.ucai.WePartyBar.applib.controller.HXSDKHelper.HXSyncListener;
 import com.easemob.chat.EMContactManager;
@@ -101,7 +108,7 @@ public class ContactlistFragment extends Fragment {
                                 refresh();
 		                    }else{
 		                        String s1 = getResources().getString(R.string.get_failed_please_check);
-		                        Toast.makeText(getActivity(), s1, 1).show();
+		                        Toast.makeText(getActivity(), s1, Toast.LENGTH_LONG).show();
 		                        progressBar.setVisibility(View.GONE);
 		                    }
 		                }
@@ -319,9 +326,8 @@ public class ContactlistFragment extends Fragment {
 
 	/**
 	 * 删除联系人
-	 * 
-	 * @param toDeleteUser
-	 */
+	 * @param tobeDeleteUser
+     */
 	public void deleteContact(final User tobeDeleteUser) {
 		String st1 = getResources().getString(R.string.deleting);
 		final String st2 = getResources().getString(R.string.Delete_failed);
@@ -349,7 +355,7 @@ public class ContactlistFragment extends Fragment {
 					getActivity().runOnUiThread(new Runnable() {
 						public void run() {
 							pd.dismiss();
-							Toast.makeText(getActivity(), st2 + e.getMessage(), 1).show();
+							Toast.makeText(getActivity(), st2 + e.getMessage(), Toast.LENGTH_LONG).show();
 						}
 					});
 
@@ -379,7 +385,7 @@ public class ContactlistFragment extends Fragment {
 					getActivity().runOnUiThread(new Runnable() {
 						public void run() {
 							pd.dismiss();
-							Toast.makeText(getActivity(), st2, 0).show();
+							Toast.makeText(getActivity(), st2, Toast.LENGTH_SHORT).show();
 							refresh();
 						}
 					});
@@ -388,7 +394,7 @@ public class ContactlistFragment extends Fragment {
 					getActivity().runOnUiThread(new Runnable() {
 						public void run() {
 							pd.dismiss();
-							Toast.makeText(getActivity(), st3, 0).show();
+							Toast.makeText(getActivity(), st3, Toast.LENGTH_SHORT).show();
 						}
 					});
 				}

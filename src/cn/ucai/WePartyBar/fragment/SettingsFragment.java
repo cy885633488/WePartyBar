@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.ucai.WePartyBar.activity;
+package cn.ucai.WePartyBar.fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -30,6 +30,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easemob.EMCallBack;
+
+import cn.ucai.WePartyBar.activity.BlacklistActivity;
+import cn.ucai.WePartyBar.activity.DiagnoseActivity;
+import cn.ucai.WePartyBar.activity.LoginActivity;
+import cn.ucai.WePartyBar.activity.MainActivity;
+import cn.ucai.WePartyBar.activity.OfflinePushNickActivity;
+import cn.ucai.WePartyBar.activity.UserProfileActivity;
 import cn.ucai.WePartyBar.applib.controller.HXSDKHelper;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMChatOptions;

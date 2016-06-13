@@ -1,4 +1,4 @@
-package cn.ucai.WePartyBar.activity;
+package cn.ucai.WePartyBar.fragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -40,6 +40,8 @@ import com.easemob.chat.EMConversation.EMConversationType;
 import cn.ucai.WePartyBar.Constant;
 import cn.ucai.WePartyBar.WePartyBarApplication;
 import cn.ucai.WePartyBar.R;
+import cn.ucai.WePartyBar.activity.ChatActivity;
+import cn.ucai.WePartyBar.activity.MainActivity;
 import cn.ucai.WePartyBar.adapter.ChatAllHistoryAdapter;
 import cn.ucai.WePartyBar.db.InviteMessgeDao;
 

@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.ucai.WePartyBar.activity;
+package cn.ucai.WePartyBar.fragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,6 +46,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import cn.ucai.WePartyBar.activity.ChatActivity;
+import cn.ucai.WePartyBar.activity.MainActivity;
 import cn.ucai.WePartyBar.applib.controller.HXSDKHelper;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMContact;

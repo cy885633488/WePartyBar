@@ -1,4 +1,4 @@
-package cn.ucai.WePartyBar.activity;
+package cn.ucai.WePartyBar.fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +32,7 @@ import android.widget.Toast;
 
 import cn.ucai.WePartyBar.BuildConfig;
 import cn.ucai.WePartyBar.R;
+import cn.ucai.WePartyBar.activity.RecorderVideoActivity;
 import cn.ucai.WePartyBar.domain.VideoEntity;
 import cn.ucai.WePartyBar.video.util.ImageCache;
 import cn.ucai.WePartyBar.video.util.ImageResizer;

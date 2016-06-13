@@ -72,26 +72,26 @@ public class LoginActivity extends BaseActivity {
 		}
 		setContentView(R.layout.activity_login);
 
-//		usernameEditText = (EditText) findViewById(R.id.username);
-		passwordEditText = (EditText) findViewById(R.id.password);
+		usernameEditText = (EditText) findViewById(R.id.login_userName);
+		passwordEditText = (EditText) findViewById(R.id.login_password);
 
 		// 如果用户名改变，清空密码
-//		usernameEditText.addTextChangedListener(new TextWatcher() {
-//			@Override
-//			public void onTextChanged(CharSequence s, int start, int before, int count) {
-//				passwordEditText.setText(null);
-//			}
-//
-//			@Override
-//			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//
-//			}
-//
-//			@Override
-//			public void afterTextChanged(Editable s) {
-//
-//			}
-//		});
+		usernameEditText.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				passwordEditText.setText(null);
+			}
+
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+
+			}
+		});
 		if (WePartyBarApplication.getInstance().getUserName() != null) {
 			usernameEditText.setText(WePartyBarApplication.getInstance().getUserName());
 		}
